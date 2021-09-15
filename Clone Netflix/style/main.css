@@ -1,0 +1,103 @@
+:root{ /* decalrando variaveis dentro do css atraves do root*/
+--vermelho: #E50914;
+--preta: #141414
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*naõ ultrapassar a caixa*/
+}
+header .container{     /*containr é a CAIXA DE NAVEGACAO*/
+    display: flex; /* flex boooooox/ joga por padrao em LINHA*/
+    flex-direction: row;
+    align-items: center; /*alinha a navegação na vertical*/
+    justify-content: space-between; /*justifica na horzintaal*/
+
+
+
+/*Elementos da base*/
+    
+}
+body{
+    background-color: var(--preta); /*pegando cor da variavel*/
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+header .logo{
+    
+    color: var(--vermelho); /*cor do logo atraves da variavel*/
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none; /*tirar as linhas de baixo do link*/
+    color: #AAA;
+    margin-right: 10px; /*Distanciar o menuu de navgação inici, series, filmes*/
+}
+
+header nav a:hover{ /*quando meu mouse oassar pelo menu de navegacao a cor muda.*/
+    color: #fff;
+}
+
+/*Filmr principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0.35),rgba(0,0,0,.35)100%), url('/img/greys.jpg'); /*refeerencia para trazr a imagem // escurece um pouco a img*/
+    height:400px; /*define tamanho da imagem*/
+    background-size: cover; /*imagem pega a ara de cobertura*/
+    display: flex  ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /*comecar sempre pela esquerda*/
+
+}
+
+.filme-principal .descricao{
+    margin-top: 10px; /*diatnciar o botao da descrição*/
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50); /*tranparencia do botao*/
+    border: none;
+    color: white;
+
+    padding:  15px 30px; /*ditancia para os 4 lados*/
+    margin-right: 15px; /*distanci para esquerda*/
+    font-size: 12px;
+    
+    cursor: pointer;
+    transition: .4s ease all ; /*cuida da parte de transição entre uma anialçao o outra*/
+
+}
+.botao:hover{
+    background-color: rgb(243, 243, 243);
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70% ; /*sinopse nao vai até o final da tela */
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrossel-filmes{
+    margin-top: 5px;
+}
